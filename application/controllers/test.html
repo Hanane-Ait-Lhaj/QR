@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="<?= base_url() ?>plugins/css/style.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="<?= base_url() ?>plugins/js/script.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* */
+
+    
+    
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+   
+
+    .login {
+      width: 320px;
+      height: 450px;
+      border: 1px solid #CCC;
+      /* background: url(https://media2.giphy.com/media/dAgEMJ7HKC6jgoxFWp/giphy.gif?cid=ecf05e477oj3gf9y3tv7oola2rgpgxo6jt74qjtpoptecs1c&ep=v1_gifs_related&rid=giphy.gif&ct=g) center center no-repeat; */
+      background-color: #FFF;
+      background-size: cover;
+      margin: 30px auto;
+      border-radius: 20px;
+    }
+
+    .login .form {
+      width: 100%;
+      height: 100%;
+      padding: 15px 25px;
+    }
+
+    
+    .login .form h2 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 60px;
+      margin-bottom: 80px;
+    }
+
+    .login .form input {
+      width: 100%;
+      height: 40px;
+      margin-top: 20px;
+      
+      padding: 0 15px;
+
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .login .form input:focus {
+      outline: none;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #DDD;
+    }
+
+    .login .form input.submit {
+      background: rgba(255, 255, 255, .9);
+      color: #444;
+      font-size: 15px;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper"></div>
+    <p class="logo">
+      <a href="#" class="brand-logo center" style="
+    width: 410px;
+    border-radius: 10px;
+">
+        <img src="<?= base_url() ?>plugins/img/logo.png" alt="" srcset="">
+      </a>
+    </p>
+  </nav>
+
+
+
+
+
+<br><br>
+  <form method="post" action="<?= base_url() ?>admin/login">
+    <div class="login">
+      <div class="form">
+        <h2 >لوحة التحكم منصة التسجيل كلية الشريعة</h2>
+
+        <div class='row'>
+          <div class='input-field col s9'>
+          <i class="material-icons prefix">account_circle</i>
+            <input class='validate' type="text" name="username" id='username' required>
+            <label for='username'>اسم المستخدم</label>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='input-field col s9'>
+          <i class="material-icons prefix">lock_outline</i> 
+          <input class='validate' type="password" name="password" id="password"  required>
+            <label for='password'>كلمة المرور</label>
+          </div>
+        </div>
+        <input type="submit" value="تسجيل الدخول" class="submit">
+      </div>
+    </div>
+  </form>
+
+<!-- <script>
+  <?php
+  if ($etat != false)
+    echo "M.toast({html: '" . $etat . "'})";
+  ?>
+  </script> -->
+</body>
+
+</html>

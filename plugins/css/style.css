@@ -1,0 +1,68 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/ge-mb-najm-medium.ttf);
+}
+
+body {
+    font-family: myFirstFont;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-image: url(../img/bg1.png);
+    background-color: white;
+    position: relative;
+    z-index: 333;
+}
+.pulse{
+	background-color: #3f51b5 !important;
+}
+.logo {
+    margin-top: 8px;
+}
+
+.logo a {
+    background-color: white;
+    width: 119px;
+    margin-top: -72px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #bdbdbd;
+    height: 125px;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 75%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer_master {
+    background-image: url(../img/bg1.png);
+    box-shadow: 0 0 17px -3px #4a4949;
+    height: 56px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: white;
+}
+
+#progress {
+    margin: 0;
+}
+
+.nav_1 {
+    background-image: url(../img/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 64px;
+    background-color: #fff;
+    box-shadow: 0 0 4px;
+    position: relative;
+    overflow: hidden;
+}
